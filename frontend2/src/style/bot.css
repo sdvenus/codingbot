@@ -1,0 +1,109 @@
+/* Container styles */
+.bot-container {
+  align-items: center;
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+
+}
+
+
+/* Apply rounded border */
+.bot {
+  border-radius: 8px;
+}
+
+/* Form styles */
+.bot-form {
+  margin-bottom: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.bot-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.bot-form input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.bot-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.bot-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Error message styles */
+.bot-error {
+  color: #dc3545;
+  margin-top: 10px;
+}
+
+/* Generated code and review styles */
+.bot-output {
+  margin-top: 20px;
+}
+
+.bot-output h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.bot-output pre {
+  text-align: start;
+  white-space: pre-wrap; /* Preserve formatting */
+  overflow-x: auto; /* Enable horizontal scroll if needed */
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  font-size: 14px;
+}
+
+/* Loading spinner styles */
+.bot-loading {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(0, 123, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #007bff;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
