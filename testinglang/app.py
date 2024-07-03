@@ -17,7 +17,7 @@ llm = OpenAI(openai_api_key=api_key)
 
 def generateCode(task, language):
     code_prompt = PromptTemplate(
-        template="Write a {language} function that will {task}, ensuring correct indentation and structure, without comments, examples or extra text",
+        template="Write a {language} function that will {task}, ensuring correct indentation and structure, without comments, examples or extra text. Make sure that you do not add comments, output or example usages. Make sure that you only give me CODE",
         input_variables=["language", "task"]
     )
     code_chain = LLMChain(prompt=code_prompt, llm=llm, output_key="generated_code")
